@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root{
+  --yellow: #FCDB00;
+  --gray: #8B8A8B;
+  --black: #010101;
+  --white: #ffffff;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: var(--grey);
+}
+
+.slider, .content, .footer{
+   min-height: 740px;
+   padding: 80px 0px 25px;
+}
+
+section{
+    display: flex;
+}
+
+.main{
+    min-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header{
+    z-index: 100;
+    background-color:var(--yellow);
+    color: var(--black);
+    padding: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.header .main{
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    text-align: center;
+}
+
+.social{
+    text-align: right;
+}
+
+.slider .main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4em;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.description{
+    margin: 40px 0;
+    font-size: 27px;
+    line-height: 1.4em;
+    max-width: 754px;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+}
+
+.os_item{
+    margin: 0 9px;
+}
+
+.slider_navs{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider_nav{
+   width: 15px;
+   height: 15px;
+   border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0.5);
+   margin: 0 7.5px;
+   cursor: pointer;
+   transition-property: background-color;
+   transition-duration: 0.5s;
+}
+
+.slider_nav:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.social a {
+   display: inline-block;
+   margin-left: 15px;
+}
+
+.header .main div{
+    flex-basis: 30%;
+}
+
+.slider{
+    position: relative;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.content{
+    color: var(--black);
+}
+
+.content .main{
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_header{
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+.content_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content_image{
+  margin:  100px;
+}
+
+.content_item{
+    width: 270px;
+   display: flex;
+   flex-direction: column;
+}
+
+.content_theme{
+    color: var(--black);
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom:20px;
+}
+
+.content_desc{
+    color: var(--gray);
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_main{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer_theme{
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer_desc{
+    text-align: center;
+    margin: 0 auto;
+    width: 754px;
+    height: 100px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    
+}
+
+.footer_mail{
+    margin: 0 auto;
+    width: 700px;
+    border-radius: 3px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.mail_block{
+    padding: 20px;
+height: 50px;
+ width: 560px;
+}
+
+.mail_btn{
+    margin-left: 20px;
+    width: 174px;
+    height: 51px;
+    border-radius: 3px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_mail > a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer_nav{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.nav_block{
+    color: var(--white);
+    width: 367px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .slider, .content, .footer{
+        min-height: 100%;
+    }
+}
